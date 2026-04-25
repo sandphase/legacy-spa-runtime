@@ -1,3 +1,3 @@
-import { headerLinks } from "./helpers/header.js";
+import { headerLinks } from "./helpers/header.js?v=7";
 
 headerLinks();

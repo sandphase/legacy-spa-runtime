@@ -4,7 +4,8 @@
   "description": "Single Page Aplication",
   "main": "index.js",
   "scripts": {
-    "test": "unit:test"
+    "test": "unit:test",
+    "dev": "npx http-server -p 8080"
   },
   "author": "Alan-A",
   "license": "MIT",
