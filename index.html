@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./vendor/materialize.min.css" />
+    <link rel="stylesheet" href="./vendor/animate.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>ULTRA SPA | Pokémon Edition</title>
   </head>
@@ -32,9 +35,18 @@
 
     </main>
 
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
-    <script src="./node_modules/moment/dist/moment.js" type="module"></script>
+    <script src="./vendor/jquery.min.js"></script>
+    <script>
+      if (typeof window.jQuery === 'undefined') {
+        document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"><\\/script>');
+      }
+    </script>
+    <script src="./vendor/materialize.min.js"></script>
+    <script>
+      if (typeof window.M === 'undefined') {
+        document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"><\\/script>');
+      }
+    </script>
     <script src="./src/main.js" type="module"></script>
   </body>
 </html>
